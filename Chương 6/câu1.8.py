@@ -3,4 +3,10 @@ def is_leap_year(year):
         return True
     else:
         return False
-      
+
+# Nhập năm từ người dùng
+year = int(input("Nhập năm: "))
+if is_leap_year(year):
+    print(f"Năm {year} là năm nhuận.")
+else:
+    print(f"Năm {year} không phải là năm nhuận.")
