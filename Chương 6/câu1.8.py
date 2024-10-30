@@ -1,12 +1,7 @@
-def is_leap_year(year):
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        return True
-    else:
-        return False
-
-# Nhập năm từ người dùng
-year = int(input("Nhập năm: "))
-if is_leap_year(year):
-    print(f"Năm {year} là năm nhuận.")
+#câu1
+year = int(input("nhập năm: "))
+#điều kiện  Năm nhuận chia hết cho 4, nhưng không chia hết cho 100 hoặc chia hết 400. 
+if year %4 ==0  and year %100 !=0 or year %400 ==0:
+    print(" là năm nhuận")
 else:
-    print(f"Năm {year} không phải là năm nhuận.")
+    print("không phải năm nhuận, vui lòng nhập lại")
